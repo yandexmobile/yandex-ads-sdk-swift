@@ -11,5 +11,7 @@ EULA is available at [EULA website][LICENSE]
 
 2. Add `-ObjC` to OTHER_LDFLAGS
 
+3. Ensure that your target is linked binary with YandexMobileAdsPackge (Build Phases -> Link Binary With Libraries)
+
 [DOCUMENTATION]: https://tech.yandex.ru/mobile-ads/
 [LICENSE]: https://yandex.com/legal/mobileads_sdk_agreement/
