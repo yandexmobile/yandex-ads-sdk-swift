@@ -40,13 +40,13 @@ let package = Package(
         ),
         .binaryTarget(
             name: "YandexMobileAds",
-            url: "https://github.com/yandexmobile/yandex-ads-sdk-swift/releases/download/5.1.0/YandexMobileAds.xcframework.zip",
-            checksum: "dc7c231dfa1a31a776a2a2d07ab0a51adf2c4af0ace38df0774d195a2d4b170b"
+            url: "https://github.com/yandexmobile/yandex-ads-sdk-swift/releases/download/5.2.0/YandexMobileAds.xcframework.zip",
+            checksum: "47c42307dbb370722f4ea82c8e602d5dabbfb94f44c3d2eef9e30e60f712ba7e"
         ),
         .binaryTarget(
             name: "YandexMobileAdsInstream",
-            url: "https://github.com/yandexmobile/yandex-ads-sdk-swift/releases/download/5.1.0/YandexMobileAdsInstream.xcframework.zip",
-            checksum: "b85f8e887c110e9ae98c735b07343ad03d6a6602bbe2a185d9866f521e02e786"
+            url: "https://github.com/yandexmobile/yandex-ads-sdk-swift/releases/download/5.2.0/YandexMobileAdsInstream.xcframework.zip",
+            checksum: "434818d0c373eb6217ef3978fbfacb0f3437ecff6b1b004ec4cefda39436282f"
         ),
     ]
 )
