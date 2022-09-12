@@ -21,6 +21,9 @@ let package = Package(
                 .product(name: "YandexMobileMetrica", package: "metrica-sdk-ios"),
             ],
             path: "YandexMobileAdsTarget",
+            resources: [
+                .copy("YandexMobileAdsBundle.bundle")
+            ],
             linkerSettings: [
                 .linkedFramework("UIKit"),
                 .linkedFramework("Foundation"),
