@@ -5,12 +5,12 @@ import PackageDescription
 
 let package = Package(
     name: "YandexMobileAdsPackage",
-    platforms: [.iOS(.v10)],
+    platforms: [.iOS(.v12)],
     products: [
-        .library(name: "YandexMobileAdsPackage", targets: ["YandexMobileAdsTarget"])
+        .library(name: "YandexMobileAdsPackage", targets: ["YandexMobileAdsTarget"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/yandexmobile/metrica-sdk-ios", "4.0.0"..<"5.0.0")
+        .package(url: "https://github.com/yandexmobile/metrica-sdk-ios", "4.0.0"..<"5.0.0"),
     ],
     targets: [
         .target(
@@ -35,18 +35,17 @@ let package = Package(
                 .linkedFramework("AVFoundation"),
                 .linkedFramework("CoreImage"),
                 .linkedFramework("CoreMedia"),
-                .linkedLibrary("xml2")
             ]
         ),
         .binaryTarget(
             name: "YandexMobileAds",
-            url: "https://github.com/yandexmobile/yandex-ads-sdk-swift/releases/download/5.2.1/YandexMobileAds.xcframework.zip",
-            checksum: "bcc8d244cb8dd51a1d44c3f7fd87dabb996fbc28da89ce62901e2ad8a2b7f987"
+            url: "https://github.com/yandexmobile/yandex-ads-sdk-swift/releases/download/5.3.0/YandexMobileAds.xcframework.zip",
+            checksum: "2cbcca3cf36009e7b1ab16e8617e1b41218210c46e278669f411dae73269acf5"
         ),
         .binaryTarget(
             name: "YandexMobileAdsInstream",
-            url: "https://github.com/yandexmobile/yandex-ads-sdk-swift/releases/download/5.2.1/YandexMobileAdsInstream.xcframework.zip",
-            checksum: "2571bb4af611cf491e89f8fa2f3bf2a840b7d59617372b1c154d680c29296a58"
+            url: "https://github.com/yandexmobile/yandex-ads-sdk-swift/releases/download/5.3.0/YandexMobileAdsInstream.xcframework.zip",
+            checksum: "f5d01a89f8bc43cb7a70cce74429f49345d86fbd845a77c2e76a4cad9a218aa4"
         ),
     ]
 )
