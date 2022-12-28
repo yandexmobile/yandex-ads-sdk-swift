@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.7
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -39,13 +39,13 @@ let package = Package(
         ),
         .binaryTarget(
             name: "YandexMobileAds",
-            url: "https://github.com/yandexmobile/yandex-ads-sdk-swift/releases/download/5.3.1/YandexMobileAds.xcframework.zip",
-            checksum: "bbaaf731c5021cc1d58fbeaaa521e73fc3945a0d9c8ef6aa2a10d19ca687fd9b"
+            url: "https://github.com/yandexmobile/yandex-ads-sdk-swift/releases/download/5.4.0/YandexMobileAds.xcframework.zip",
+            checksum: "74245e62b2e8b7553e004f720771417461851518db7bdb5c8d1f7ae05a1109c9"
         ),
         .binaryTarget(
             name: "YandexMobileAdsInstream",
-            url: "https://github.com/yandexmobile/yandex-ads-sdk-swift/releases/download/5.3.1/YandexMobileAdsInstream.xcframework.zip",
-            checksum: "233b3be888964ccc57863a18fb84e71b28e45beb84f95274ea95cf97c3304b05"
+            url: "https://github.com/yandexmobile/yandex-ads-sdk-swift/releases/download/5.4.0/YandexMobileAdsInstream.xcframework.zip",
+            checksum: "4bbae741e0f39ff5226cf6912635581377394e3a0de71af0bc787ec58bef029a"
         ),
     ]
 )
