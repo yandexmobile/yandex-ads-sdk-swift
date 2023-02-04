@@ -37,17 +37,18 @@ let package = Package(
                 .linkedFramework("AVFoundation"),
                 .linkedFramework("CoreImage"),
                 .linkedFramework("CoreMedia"),
+                .linkedFramework("Network"),
             ]
         ),
         .binaryTarget(
             name: "YandexMobileAds",
-            url: "https://github.com/yandexmobile/yandex-ads-sdk-swift/releases/download/5.4.0/YandexMobileAds.xcframework.zip",
-            checksum: "74245e62b2e8b7553e004f720771417461851518db7bdb5c8d1f7ae05a1109c9"
+            url: "https://github.com/yandexmobile/yandex-ads-sdk-swift/releases/download/5.5.0/YandexMobileAds.xcframework.zip",
+            checksum: "c744fe19bd4ad2d86061d0f5623a6ad7a568f1fe4b696e2f1db16a560f18efe8"
         ),
         .binaryTarget(
             name: "YandexMobileAdsInstream",
-            url: "https://github.com/yandexmobile/yandex-ads-sdk-swift/releases/download/5.4.0/YandexMobileAdsInstream.xcframework.zip",
-            checksum: "4bbae741e0f39ff5226cf6912635581377394e3a0de71af0bc787ec58bef029a"
+            url: "https://github.com/yandexmobile/yandex-ads-sdk-swift/releases/download/5.5.0/YandexMobileAdsInstream.xcframework.zip",
+            checksum: "e11fd03106dcc4ed1a4b79fb447e073c1c9e383a43216cf8bee1b1da51afe1a8"
         ),
     ]
 )
