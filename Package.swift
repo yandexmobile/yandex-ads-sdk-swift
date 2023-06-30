@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7; 
+// swift-tools-version: 5.7;
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -15,7 +15,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/divkit/divkit-ios", "24.0.0"..<"24.1.0"),
+        .package(url: "https://github.com/divkit/divkit-ios", from: "24.2.0"),
         .package(url: "https://github.com/yandexmobile/metrica-sdk-ios", "4.0.0"..<"5.0.0")
     ],
     targets: [
@@ -49,13 +49,13 @@ let package = Package(
         ),
         .binaryTarget(
             name: "YandexMobileAds",
-            url: "https://ads-mobile-sdk.s3.yandex.net/YandexMobileAds/5.7.0/spm/a60ee7ee-492c-4f22-b3ba-da6d2e219611.zip",
-            checksum: "9f9c958d56f515c12ed28ef305223b20e396a1bf10582f31a542dd3f0bf9b5f2"
+            url: "https://ads-mobile-sdk.s3.yandex.net/YandexMobileAds/5.8.0/spm/14f9ef2a-c8c9-4853-8279-28e68383871b.zip",
+            checksum: "e4d1e71242bbbb04c0786bafc9db263cf15d996f906eb2925c99c565148d7a63"
         ),
         .binaryTarget(
             name: "YandexMobileAdsInstream",
-            url: "https://ads-mobile-sdk.s3.yandex.net/YandexMobileAdsInstream/0.17.0/spm/69eadd9d-4c39-4698-bc9f-8d39a509f657.zip",
-            checksum: "c79790e655d1ca37541dd3c7a4e541cd80df6643928260a0b3c8e91979ecd8e9"
+            url: "https://ads-mobile-sdk.s3.yandex.net/YandexMobileAdsInstream/0.18.0/spm/338d05ac-31bb-441c-857f-de5255882e88.zip",
+            checksum: "efeb2d57ae4bcfd1595c05f307e4cc0ae9614ae0804ca071c3e409fa230e49e5"
         )
     ]
 )
