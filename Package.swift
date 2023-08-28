@@ -20,14 +20,14 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "MobileAdsTarget",
+            name: "YandexMobileAdsTarget",
             dependencies: [
                 .target(name: "YandexMobileAds"),
                 .target(name: "YandexMobileAdsInstream"),
                 .product(name: "DivKit", package: "divkit-ios"),
                 .product(name: "YandexMobileMetrica", package: "metrica-sdk-ios")
             ],
-            path: "MobileAdsTarget",
+            path: "YandexMobileAdsTarget",
             linkerSettings: [
                 .linkedFramework("AVFoundation"),
                 .linkedFramework("AdSupport"),
