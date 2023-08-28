@@ -11,7 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "YandexMobileAdsPackage",
-            targets: ["MobileAdsTarget"]
+            targets: ["YandexMobileAdsTarget"]
         )
     ],
     dependencies: [
