@@ -26,6 +26,7 @@ let package = Package(
                 .target(name: "YandexMobileAds"),
                 .target(name: "YandexMobileAdsInstream"),
                 .product(name: "DivKit", package: "divkit-ios"),
+                .product(name: "BasePublic", package: "vgsl"),
                 .product(name: "YandexMobileMetrica", package: "metrica-sdk-ios")
             ],
             path: "YandexMobileAdsTarget",
