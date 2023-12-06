@@ -15,21 +15,22 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/divkit/divkit-ios", exact: "28.4.0"),
         .package(url: "https://github.com/yandexmobile/metrica-sdk-ios", "4.0.0"..<"5.0.0"),
-        .package(url: "https://github.com/yandex/vgsl", exact: "2.2.0")
+        .package(url: "https://github.com/divkit/divkit-ios", "28.11.0"..<"29.0.0")
     ],
     targets: [
         .target(
             name: "YandexMobileAdsTarget",
             dependencies: [
-                .target(name: "YandexMobileAds"),
                 .target(name: "YandexMobileAdsInstream"),
-                .product(name: "DivKit", package: "divkit-ios"),
-                .product(name: "BasePublic", package: "vgsl"),
-                .product(name: "YandexMobileMetrica", package: "metrica-sdk-ios")
+                .target(name: "YandexMobileAds"),
+                .product(name: "YandexMobileMetrica", package: "metrica-sdk-ios"),
+                .product(name: "DivKit", package: "divkit-ios")
             ],
             path: "YandexMobileAdsTarget",
+            resources: [
+                .process("PrivacyInfo.xcprivacy")
+            ],
             linkerSettings: [
                 .linkedFramework("AVFoundation"),
                 .linkedFramework("AdSupport"),
@@ -50,14 +51,14 @@ let package = Package(
             ]
         ),
         .binaryTarget(
-            name: "YandexMobileAds",
-            url: "https://ads-mobile-sdk.s3.yandex.net/YandexMobileAds/6.1.0/spm/b18a180d-f825-4163-95ab-7bb8d865fecd.zip",
-            checksum: "3e9862ce8d7eda8d501ee91ab5e40b58fe7bb92e1d52f0309a8ca4014e2eea10"
+            name: "YandexMobileAdsInstream",
+            url: "https://ads-mobile-sdk.s3.yandex.net/YandexMobileAdsInstream/0.22.0/spm/9bb45710-0188-498d-bd1a-c3de64059dbd.zip",
+            checksum: "08a6363ee9b4f2eed99dd715421d167146a15e8992d3c108b43668eaa6b95322"
         ),
         .binaryTarget(
-            name: "YandexMobileAdsInstream",
-            url: "https://ads-mobile-sdk.s3.yandex.net/YandexMobileAdsInstream/0.21.0/spm/6939fbf0-b518-4b24-8194-2df891be460a.zip",
-            checksum: "2b54c507809410cbaaeac9bf85fd46f637f122d16261f9ec0e3ce813ed62aaf6"
+            name: "YandexMobileAds",
+            url: "https://ads-mobile-sdk.s3.yandex.net/Yandex/YandexMobileAds/6.2.0/spm/8d4fcad6-0c2a-4502-8866-1a5c6ce0997d.zip",
+            checksum: "1f77f88ae3874eb82b0ec1c56642aec8ddcc679d27acf49627e95463fa745bff"
         )
     ]
 )
