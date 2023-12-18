@@ -1,4 +1,4 @@
-# :warning: This repository is archived and will no longer be updated. Use [yandex-ads-sdk-ios](https://github.com/yandexmobile/yandex-ads-sdk-ios) for integration `YandexMobileAds via` SPM.
+# :warning: This repository is archived and will no longer be updated. Use [yandex-ads-sdk-ios](https://github.com/yandexmobile/yandex-ads-sdk-ios) for integration `YandexMobileAds` via SPM.
 
 # Yandex Advertising Network Mobile
 
